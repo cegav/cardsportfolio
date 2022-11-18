@@ -1,0 +1,121 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: #fff;
+    font-size: 62.5%;
+}
+
+body, html {
+    background-image: linear-gradient(to right top, #051937, #121632, #19142d, #1d1227, #1f1122);
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+    /* background-position: center; */
+    font-family: 'Quicksand', sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+    /* background: rgb(2,12,80);
+    background: linear-gradient(90deg, rgba(2,12,80,1) 0%, rgba(0,2,11,1) 58%, rgba(5,0,79,1) 100%); */
+}
+
+.cards {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem auto;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    align-items: start;
+    background: rgba(255, 255, 255, 0.1);
+    /* backdrop-filter: blur(5px); */
+    border-radius: 1.5rem;
+    border-top: .1rem solid rgba(255, 255, 255, 0.5);
+    border-left: .1rem solid rgba(255, 255, 255, 0.5);
+    /* box-shadow: 4px 4px 12px #21ffe2; */
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);;
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    position: relative;
+    width: 28rem;    
+}
+
+.card__description {
+    margin: 1rem;
+    font-size: 1.3rem;
+    width: 259px;
+}
+
+.cards img {
+    align-self: center;
+    width: 279px;
+    height: 140px;
+    /* padding-top: 1rem; */
+    border-radius: 1.1rem 1.1rem .2rem .2rem;
+}
+
+.card h3 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.card__technologies {
+    margin-top: 1rem;
+    width: 26.8rem;
+}
+
+.card__technologies ul {
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: 600;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: .2rem;
+    list-style: none;
+
+}
+
+/* style buttons */
+
+.card__btns {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.6rem;  
+}
+
+.card .card__btn {
+    background-color: #05001f;
+    border: 0.2rem solid #19142d;
+    border-radius: .4rem;
+    color: #ffff;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    /* position: relative; */
+    transition: all 1s ease;
+    box-shadow: .1rem .1rem .1rem #ccc,
+    -.1rem -.1rem .1rem #575a77;
+}
+
+.card .card__btn:hover {
+    box-shadow: .1rem .1rem .1rem #575a77,
+    -.1rem -.1rem .1rem #ccc;
+}
+
+.card .card__btn:active {
+    box-shadow: inset .1rem .1rem .1rem #575a77,
+    -.1rem -.1rem .1rem #ccc;
+}
